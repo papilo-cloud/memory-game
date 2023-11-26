@@ -1,12 +1,15 @@
-import React, {useState} from 'react'
+import React, {useState,useContext} from 'react'
+import { useTasks } from '../hooks/useContext'
 
-export const AddTask = ({handleAddask}: {handleAddask:(val:string) => void}) => {
+export const AddTask = () => {
     const [val, setVal] = useState('')
+    const {handleAddTask} = useTasks()
     function handleSubmit(e: any) {
         e.preventDefault()
-        handleAddask(val)
+        handleAddTask(val)
         setVal('')
     }
+    console.log(handleAddTask)
   return (
     <div>
         <form onSubmit={handleSubmit}>

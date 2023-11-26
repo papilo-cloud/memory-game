@@ -1,101 +1,129 @@
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+:root {
+  --color-dark-tangerine: #fda214;
+  --color-light-tangerine: #ffb84a;
+  --color-spindle: #bcced9;
+  --color-arapawa: #304859;
+  --color-tangaroa: #152938;
+  --color-white-smoke: #f2f2f2;
+  --color-bermuda-grey: #7191a5;
+  --color-shakespeare: #6395b8;
+  --color-pattens-blue: #dfe7ec;
+  --color-snow: #fcfcfc;
+  --font-size-dsk-h1: 4.8rem;
+  --font-size-dsk-h2: 3.2rem;
+  --font-size-dsk-h3: 2rem;
+  --font-size-dsk-number-4x4: 4.4rem;
+  --font-size-dsk-number-6x6: 3.2rem;
+  --font-size-dsk-button: 2rem;
+  --font-size-dsk-button-big: 3rem;
+  --font-size-dsk-button-menu: 2.4rem;
+  --font-size-dsk-p: 1.8rem;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* Mobile */
+  --font-size-mob-h1: 3.6rem;
+  --font-size-mob-h2: 2.4rem;
+  --font-size-mob-h3: 1.8rem;
+  --font-size-mob-number-4x4: 3.4rem;
+  --font-size-mob-number-6x6: 2.4rem;
+  --font-size-mob-button: 1.8rem;
+  --font-size-mob-button-big: 2.4rem;
+  --font-size-mob-button-menu: 1.8rem;
+  --font-size-mob-p: 1.6rem;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  /* Tablet */
+  --font-size-tab-h1: 4.4rem;
+  --font-size-tab-h2: 3rem;
+  --font-size-tab-h3: 1.8rem;
+  --font-size-tab-number-4x4: 4.2rem;
+  --font-size-tab-number-6x6: 3rem;
+  --font-size-tab-button: 1.8rem;
+  --font-size-tab-button-big: 2.8rem;
+  --font-size-tab-button-menu: 2.2re-m;
+  --font-size-tab-p: 1.6rem;
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: var(--font-size-mob-h1);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+h2 {
+  font-size: var(--font-size-mob-h2);
+}
+
+h3 {
+  font-size: var(--font-size-mob-h3);
+}
+button{
+  margin: 0;
+  outline: none;
+  border: 0;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: .3s;
 }
-button:hover {
-  border-color: #646cff;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
-
-body{
-  text-align: center;
-}
-.cell{
+ body{
   position: relative;
-  display: inline-block;
-  border: 1px solid #bbb;
-  background-color: #eee;
-  width: 100px;
-  height: 100px;
-  cursor: pointer;
-}
-.cell button{
   width: 100%;
-  height: 100%;
-  position: relative;
-  display: block;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--color-snow);
+  background-color: red;
+  font-family: sans-serif;
 }
-.disabled {
-  /* background-color: #dd1616; */
-  }
-  .card-front, .card-back{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #282a3a;
-    transition: transform .5 cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
-  .card-back{
-    transform: rotateY(180deg);
-  }
+.menu{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #152938;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu h2{
+  color: var(--color-snow);
+}
+.menu .cont{
+  position: relative;
+  width: 100%;
+  /* height: 500px; */
+  background-color: var(--color-snow);
+  border-radius: 14px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.menu .cont button{
+  padding: 12px;
+  color: var(--color-snow);
+  font-size: var(--font-size-mob-button);
+  background-color: var(--color-spindle);
+  border-radius: 36px;
+  width: 100%;
+}
+.cont .box{
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.cont .box p{
+  font-size: var(--font-size-mob-p);
+}
+.box .butn{
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 17px;
+  justify-content: space-between;
+}
+.menu .cont .start{
+  background-color: var(--color-dark-tangerine);
+}

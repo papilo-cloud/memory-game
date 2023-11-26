@@ -1,4 +1,1 @@
 
-function setReducer(state, action) {
-    
-}
