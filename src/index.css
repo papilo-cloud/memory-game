@@ -9,48 +9,42 @@
   --color-shakespeare: #6395b8;
   --color-pattens-blue: #dfe7ec;
   --color-snow: #fcfcfc;
-  --font-size-dsk-h1: 4.8rem;
+
+  --font-weight-nm: 600;
+  --font-weight-md: 800;
+  --font-size-dsk-h1: 4rem;
   --font-size-dsk-h2: 3.2rem;
   --font-size-dsk-h3: 2rem;
-  --font-size-dsk-number-4x4: 4.4rem;
-  --font-size-dsk-number-6x6: 3.2rem;
   --font-size-dsk-button: 2rem;
-  --font-size-dsk-button-big: 3rem;
-  --font-size-dsk-button-menu: 2.4rem;
-  --font-size-dsk-p: 1.8rem;
+  --font-size-dsk-p: 1.4rem;
 
   /* Mobile */
-  --font-size-mob-h1: 3.6rem;
-  --font-size-mob-h2: 2.4rem;
-  --font-size-mob-h3: 1.8rem;
-  --font-size-mob-number-4x4: 3.4rem;
-  --font-size-mob-number-6x6: 2.4rem;
-  --font-size-mob-button: 1.8rem;
-  --font-size-mob-button-big: 2.4rem;
-  --font-size-mob-button-menu: 1.8rem;
-  --font-size-mob-p: 1.6rem;
+  --font-size-mob-h1: 3rem;
+  --font-size-mob-h2: 1.5rem;
+  --font-size-mob-h3: 1.1rem;
+  --font-size-mob-button: 1.2rem;
+  --font-size-mob-p: 1rem;
 
   /* Tablet */
-  --font-size-tab-h1: 4.4rem;
-  --font-size-tab-h2: 3rem;
-  --font-size-tab-h3: 1.8rem;
-  --font-size-tab-number-4x4: 4.2rem;
-  --font-size-tab-number-6x6: 3rem;
-  --font-size-tab-button: 1.8rem;
-  --font-size-tab-button-big: 2.8rem;
-  --font-size-tab-button-menu: 2.2re-m;
-  --font-size-tab-p: 1.6rem;
+  --font-size-tab-h1: 3rem;
+  --font-size-tab-h2: 1.9rem;
+  --font-size-tab-h3: 1.4rem;
+  --font-size-tab-button: 1.3rem;
+  --font-size-tab-p: 1rem;
 }
 h1 {
   font-size: var(--font-size-mob-h1);
+  font-weight: var(--font-weight-nm);
 }
 
 h2 {
   font-size: var(--font-size-mob-h2);
+  font-weight: var(--font-weight-nm);
 }
 
 h3 {
   font-size: var(--font-size-mob-h3);
+  font-weight: var(--font-weight-nm);
 }
 button{
   margin: 0;
@@ -58,6 +52,7 @@ button{
   border: 0;
   cursor: pointer;
   transition: .3s;
+  font-weight: 500;
 }
 *{
   box-sizing: border-box;
@@ -102,11 +97,11 @@ button{
   gap: 36px;
 }
 .menu .cont button{
-  padding: 12px;
+  padding: 14px;
   color: var(--color-snow);
   font-size: var(--font-size-mob-button);
   background-color: var(--color-spindle);
-  border-radius: 36px;
+  border-radius: 46px;
   width: 100%;
 }
 .cont .box{
@@ -116,14 +111,124 @@ button{
 }
 .cont .box p{
   font-size: var(--font-size-mob-p);
+  font-weight: var(--font-weight-nm);
 }
 .box .butn{
   position: relative;
   width: 100%;
   display: flex;
-  gap: 17px;
+  gap: 14px;
   justify-content: space-between;
 }
 .menu .cont .start{
   background-color: var(--color-dark-tangerine);
+  font-weight: var(--font-weight-nm);
+}
+
+/* 
+  Modal Styling
+ */
+ .modal{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  background-color: var(--color-snow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
+ .modal .end-cont{
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  background-color: var(--color-white-smoke);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+ }
+ .end-cont .txt{
+  position: relative;
+  text-align: center;
+  width: 100%;
+ }
+ .end-cont .txt h2{
+  color: var(--color-tangaroa);
+  margin-bottom: 20px;
+ }
+ .end-cont .txt p{
+  color: var(--color-shakespeare);
+  font-weight: var(--font-weight-nm);
+ }
+ .end-cont .mesg {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+ }
+ .mesg .time{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-pattens-blue);
+  border-radius: 8px;
+  padding: 18px;
+ }
+ .mesg .time p{
+  font-weight: 600;
+  color: var(--color-bermuda-grey);
+ }
+ .mesg .time h3{
+  color: var(--color-arapawa);
+ }
+ .btn {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+ }
+ .btn button{
+  padding: 18px;
+  color: var(--color-arapawa);
+  font-size: var(--font-size-mob-button);
+  background-color: var(--color-pattens-blue);
+  border-radius: 46px;
+  width: 100%;
+ }
+ .btn .restart{
+  background-color: var(--color-dark-tangerine);
+  color: var(--color-white-smoke);
+ }
+@media screen and (min-width: 740px) {
+  h2{
+    font-size: var(--font-size-tab-h2);
+    font-weight: var(--font-weight-md);
+}
+  h3{
+    font-size: var(--font-size-tab-h3);
+    font-weight: var(--font-weight-md);
+  }
+  button{
+    font-weight: var(--font-weight-nm);
+  }
+  .menu .cont, .modal .end-cont{
+    width: 700px;
+    padding: 48px;
+    gap: 38px;
+  }  
+  .box .butn{
+    gap: 35px;
+  }
+  .menu .cont .start{
+    padding: 22px;
+  }
+  .btn{
+    flex-direction: row;
+  }
 }

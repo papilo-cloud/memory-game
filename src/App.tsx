@@ -4,6 +4,7 @@ import { AddTask } from './components/AddTask';
 import { MyTask } from './components/MyTask';
 import ProviderContext from './hooks/useContext';
 import { Menu } from './components/Menu';
+import { Modal } from './components/modal/Modal';
 
 
 // type AppProps = {
@@ -32,6 +33,7 @@ function App() {
   return (
       // <ProviderContext>
         <Menu />
+        // <Modal />
       // </ProviderContext>
   )
 }
