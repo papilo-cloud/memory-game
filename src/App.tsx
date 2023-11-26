@@ -32,7 +32,8 @@ function App() {
   
   return (
       // <ProviderContext>
-        <Menu />
+        // <Menu />
+        <Game />
         // <Modal />
       // </ProviderContext>
   )
