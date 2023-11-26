@@ -10,6 +10,9 @@ const initialTasks = [
   {id: 2, text: 'Lennon Wall pic'
   , done: false},
 ];
+const gameState = [
+    {}
+]
 
 type TaskContextProps = {
     tasks: {

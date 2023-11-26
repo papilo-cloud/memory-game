@@ -1,0 +1,75 @@
+ [
+    {
+        "name": "anchor",
+        "imgUrl": "/assets/icons/anchor-solid.svg"
+    },
+    {
+        "name": "atom",
+        "imgUrl": "../assets/icons/atom-solid.svg"
+    },
+    {
+        "name": "bolt",
+        "imgUrl": "../assets/icons/bolt-lightning-solid.svg"
+    },
+    {
+        "name": "bomb",
+        "imgUrl": "../assets/icons/bomb-solid.svg"
+    },
+    {
+        "name": "book",
+        "imgUrl": "../assets/icons/book-solid.svg"
+    },
+    {
+        "name": "carrot",
+        "imgUrl": "../assets/icons/carrot-solid.svg"
+    },
+    {
+        "name": "cat",
+        "imgUrl": "../assets/icons/cat-solid.svg"
+    },
+    {
+        "name": "crow",
+        "imgUrl": "../assets/icons/crow-solid.svg"
+    },
+    {
+        "name": "fish",
+        "imgUrl": "../assets/icons/fish-solid.svg"
+    },
+    {
+        "name": "flask",
+        "imgUrl": "../assets/icons/flask-solid.svg"
+    },
+    {
+        "name": "hat-wizard",
+        "imgUrl": "../assets/icons/hat-wizard-solid.svg"
+    },
+    {
+        "name": "jet-fighter-up",
+        "imgUrl": "../assets/icons/jet-fighter-up-solid.svg"
+    },
+    {
+        "name": "lightbulb",
+        "imgUrl": "../assets/icons/lightbulb-solid.svg"
+    },
+    {
+        "name": "meteor",
+        "imgUrl": "../assets/icons/meteor-solid.svg"
+    },
+    {
+        "name": "moon",
+        "imgUrl": "../assets/icons/moon-solid.svg"
+    },
+    {
+        "name": "star",
+        "imgUrl": "../assets/icons/star-solid.svg"
+    },
+    {
+        "name": "terminal",
+        "imgUrl": "../assets/icons/terminal-solid.svg"
+    },
+    {
+        "name": "tree",
+        "imgUrl": "../assets/icons/anchor-solid.svg"
+    }
+]
+
